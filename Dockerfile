@@ -1,4 +1,4 @@
-FROM python:3.6-alpine
+FROM python:3.6
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
