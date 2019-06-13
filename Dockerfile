@@ -9,7 +9,7 @@ ENV PIPENV_VENV_IN_PROJECT 1
 RUN apt update && apt upgrade -y && apt install python3-dev -y
 RUN curl --silent https://bootstrap.pypa.io/get-pip.py | python3.7
 
-RUN pip3 install pipenv gunicorn
+RUN pip3 install pipenv
 
 # -- Adding Pipfiles
 ONBUILD COPY Pipfile Pipfile
